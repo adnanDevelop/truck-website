@@ -11,7 +11,7 @@
 
   /* CUSTOM PROPERTIES */
   .btn-primary {
-    @apply md:py-[12px] py-[8px]  md:px-[20px] px-[15px]  border border-red text-red font-semibold text-base;
+    @apply md:py-[12px] py-[8px]  md:px-[20px] px-[15px]  border border-red text-red font-semibold text-base transition duration-500 hover:bg-red hover:text-white ;
   }
 
   .btn-secondary {
