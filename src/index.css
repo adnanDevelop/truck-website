@@ -1,13 +1,69 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-primary;
+  }
+
+  /* CUSTOM PROPERTIES */
+  .btn-primary {
+    @apply md:py-[12px] py-[8px]  md:px-[20px] px-[15px]  border border-red text-red font-semibold text-base;
+  }
+
+  .btn-secondary {
+    @apply md:py-[14px] py-[8px]  md:px-[40px] px-[15px]  bg-white text-black font-semibold text-base transition duration-500 hover:bg-red hover:text-white;
+  }
+
+  .padding-inline {
+    @apply xl:px-[160px] lg:px-[100px] md:px-[50px] px-[20px];
+  }
+
+  .padding-block {
+    @apply xl:py-[120px] lg:py-[90px] py-[50px];
+  }
+
+  .bg-color {
+    background: linear-gradient(
+      180deg,
+      rgba(246, 246, 246, 0.85) 0%,
+      rgba(246, 246, 246, 0) 100%
+    );
+  }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.nav-scroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  animation: scroll 0.5s ease-in;
+  box-shadow: 0px 0px 5px #000, -2px -2px 5px #000;
+  transition: var(--transition);
 }
+
+@keyframes scroll {
+  0% {
+    transform: translateY(-90px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* JOIN SECTION */
+/* .join_section::before {
+  content: '';
+  background: linear-gradient(0deg, #ed1b24 0%, #ed1b24 100%);
+  background-blend-mode: multiply;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+} */
