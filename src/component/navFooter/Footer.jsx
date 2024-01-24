@@ -18,7 +18,7 @@ const Footer = () => {
           <ul className="list-unstyled flex items-center flex-wrap gap-x-[20px] ">
             <li>
               <Link
-                to="/"
+                to="/about"
                 className="footer_link text-[14px] font-normal text-gray transition duration-500 hover:text-red focus:text-red  "
               >
                 About Qwikio

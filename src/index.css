@@ -15,7 +15,7 @@
   }
 
   .btn-secondary {
-    @apply md:py-[14px] py-[8px]  md:px-[40px] px-[15px]  bg-white text-black font-semibold text-base transition duration-500 hover:bg-red hover:text-white;
+    @apply md:py-[14px] py-[8px]  md:px-[40px] px-[15px]  bg-white text-black font-semibold text-base transition duration-500 hover:scale-105;
   }
 
   .padding-inline {
@@ -56,14 +56,8 @@
 }
 
 /* JOIN SECTION */
-/* .join_section::before {
-  content: '';
-  background: linear-gradient(0deg, #ed1b24 0%, #ed1b24 100%);
-  background-blend-mode: multiply;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-} */
+.video {
+  
+  background : linear-gradient(0deg, #ed1b26d9 0%, #ed1b26e1 100%);
+  /* background-blend-mode: multiply; */
+}

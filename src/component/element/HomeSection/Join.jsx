@@ -15,13 +15,14 @@ const Join = () => {
       </p>
 
     {/* JOIN SECTION */}
-    <div className="flex items-center justify-center flex-col gap-[20px] py-[80px]  mt-[40px] relative join_section overflow-hidden  z-10 ">
-        <video src="/image/join-video.mp4" controls autoPlay loop className="w-full h-full" ></video>
-        <div className="join_content absolute top-[50%] left-[50%]   px-[40px] translate-x-[-50%] translate-y-[-50%] w-full h-full flex items-center justify-center flex-col  ">
+    <div className="flex items-center justify-center flex-col gap-[20px] py-[80px] px-[40px]  mt-[40px] relative join_section overflow-hidden  z-10 ">
+        <video src="/image/join-video.mp4" controls autoPlay loop className="w-full h-full block" ></video>
+        <div className="join_content absolute top-[50%] left-[50%] z-20   px-[40px] translate-x-[-50%] translate-y-[-50%] w-full h-full flex items-center justify-center flex-col  ">
             <h3 className="text-white lg:text-[60px] text-[40px]  font-[600] leading-none ">Join the Movement</h3>
             <p className="lg:text-[20px] text-[16px]  text-white font-primary my-[20px] max-w-[650px] ">Curious? Intrigued? Stay updated with Qwikio Inc. Sign up now and be the first to witness the future of mobility unfold.</p>
             <Link to='/contact' className="btn-secondary" >Contact Us</Link>
         </div>
+        {/* <div className="overlay absolute top-[50%] translate-y-[-50%] left-0 w-full h-[77%] " ></div> */}
     </div>
 
     </div>
