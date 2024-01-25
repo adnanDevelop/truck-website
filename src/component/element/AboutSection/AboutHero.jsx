@@ -30,7 +30,7 @@ const AboutHero = () => {
             happen.
           </h4>
           <p className="text-black font-normal text-[16px] sm:px-[40px]">
-            Foundedin 2020, Our teams in Chicago, Dubai, Lagos and our Partners
+            Founded in 2020, Our teams in Chicago, Dubai, Lagos and our Partners
             in Shanghai help achieve our mission.
           </p>
         </div>

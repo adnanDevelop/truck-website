@@ -55,9 +55,57 @@
   }
 }
 
-/* JOIN SECTION */
-.video {
-  
-  background : linear-gradient(0deg, #ed1b26d9 0%, #ed1b26e1 100%);
-  /* background-blend-mode: multiply; */
+
+/* TOP BTN  */
+.top-icon {
+  width: 3rem;
+  height: 3rem;
+  position: fixed;
+  right: 2rem;
+  bottom: 1.5rem;
+  z-index: 1;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  visibility: hidden;
+  opacity: 0.8;
+  font-size: 1.4rem;
+  border-radius: 0.4rem;
+  color: white;
+  background-color: red;
+  border: 2px solid transparent;
+  box-shadow:  0 0.8rem 1.5rem rgba(255, 0, 0, 0.604);
+  transition: all 0.4s linear;
 }
+
+.top-icon:hover , .top-icon:focus {
+  opacity: 1;
+  color: red;
+  border-color: red;
+  background-color: transparent;
+  box-shadow:  0 0.8rem 1.5rem rgba(0 , 0 , 0 , 0.5);
+}
+
+.animateIcon {
+ visibility: visible;
+  animation : iconAnimation 0.5s linear;
+}
+
+@keyframes iconAnimation {
+  0%{transform: translateY(10rem);}
+  100%{
+      transform: translateY(0rem);
+  }
+}
+
+.icon-animation {
+  animation: icon 1s linear infinite alternate-reverse;
+}
+
+@keyframes icon {
+  0%{transform: translateY(-0.5rem);}
+  100%{transform: translateY(0rem);}
+}
+
+
+/* JOIN SECTION */

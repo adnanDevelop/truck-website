@@ -4,11 +4,13 @@ import Home from "./component/page/Home";
 import About from "./component/page/About";
 import Contact from "./component/page/Contact";
 import Footer from "./component/navFooter/Footer";
+import TopBtn from "./component/Utils/TopBtn";
 
 function App() {
   return (
     <div className="App text-green-500">
       <>
+        {/* <TopBtn /> */}
         <BrowserRouter>
           <Navbar />
           <Routes>
