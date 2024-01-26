@@ -4,6 +4,7 @@ import VisionSection from "../element/AboutSection/VisionSection";
 import MissionSection from "../element/AboutSection/MissionSection";
 import InnovationSection from "../element/AboutSection/InnovationSection";
 import ComitmentSection from "../element/AboutSection/ComitmentSection";
+import JoinVideo from "../element/HomeSection/JoinVideo";
 
 const About = () => {
   return (
@@ -13,6 +14,7 @@ const About = () => {
       <MissionSection />
       <InnovationSection />
       <ComitmentSection />
+      <JoinVideo />
     </div>
   );
 };

@@ -193,4 +193,8 @@
     line-height: 40px;
     margin-bottom: 18px;
   }
+
+  .video-text-content .text {
+    font-size: 16px;
+  }
 }

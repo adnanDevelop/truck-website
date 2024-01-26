@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const Join = () => {
   return (
@@ -13,26 +12,6 @@ const Join = () => {
         journey. They're not just vehicles; they're your partners in paving the
         way for a cleaner, more exciting future.
       </p>
-
-      {/* JOIN SECTION */}
-      <div className="video-container">
-            <div className="video-banner">
-                <div className="video-div">
-                    <video autoplay loop muted> 
-                        <source src="/image/join-video.mp4" type="video/mp4" alt="background video" />
-                    </video>
-                </div>
-                <div className="video-text-content">
-                    <div className="content">
-                        <div className="title">Join the Movement</div>
-                        <div className="text">Curious? Intrigued? Stay updated with Qwikio Inc. Sign up now and be the first to witness the future of mobility unfold.</div>
-                        <div className="button">
-                            <Link to="/contact" className="btn-video-contact">Contact Us</Link>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
   );
 };
