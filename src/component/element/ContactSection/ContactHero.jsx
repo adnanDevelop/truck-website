@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactHero = () => {
   return (
-    <div className="flex flex-col gap-[-300px]">
+    <div className="flex flex-col">
       {/* FORM  HERO SECTION */}
       <div
         className="w-full h-[360px] bg-cover"
@@ -12,23 +12,24 @@ const ContactHero = () => {
       ></div>
 
       {/*FORM  SECTION */}
-      <div className="py-[50px]">
-        <div className="contact-form_section grid lg:grid-cols-12 grid-cols-1 gap-[50px] padding-inline  bg-white   mb-[100px]">
+      <div className="pb-[50px] md:mt-[-150px] mt-[-100px]  md:max-w-[950px] mx-auto bg-white px-[30px] pt-[50px]">
+        <div className="contact-form_section grid lg:grid-cols-12 grid-cols-1 gap-[50px] bg-white  md:mb-[100px] mb-[60px]  ">
           {/* DETAILS SECTION */}
-          <div className="contact_detail d-flex flex-col   lg:col-span-5  ">
+          <div className="contact_detail d-flex flex-col lg:col-span-5  ">
             <h3 className="leading-none font-bold text-[35px] uppercase text-light-black ">
               Connect with US
             </h3>
             <p className="text-[16px] text-gray font-normal mt-[20px] ">
-              Join us in our mission to drive a greener, more equitable world.{" "}
+            Join our mission to drive a greener, more equitable world. 
             </p>
             <div className="flex items-center gap-[20px] mb-[20px] mt-[20px] ">
               <img src="/image/contact/icon-1.svg" alt="" />
-              <p>+1 773-530-3799</p>
+              {/* <a href="tel:+1-773-530-3799" target="_blank"  rel="noreferrer" >+1 773-530-3799</a> */}
+              <a href="tel:+1-773-530-3799"  rel="noreferrer" >+1 773-530-3799</a>
             </div>
             <div className="flex items-center gap-[20px] mb-[20px] ">
               <img src="/image/contact/icon-2.svg" alt="" />
-              <p>info@qwikio.com</p>
+              <a href="mailto:info@qwikio.com"  rel="noreferrer" target="_blank" >info@qwikio.com</a>
             </div>
             <div className="flex items-center gap-[20px] ">
               <img src="/image/contact/icon-3.svg" alt="" />
