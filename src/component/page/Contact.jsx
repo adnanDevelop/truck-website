@@ -3,6 +3,8 @@ import ContactHero from "../element/ContactSection/ContactHero";
 import ContactForm from "../element/ContactSection/ContactForm";
 
 const Contact = () => {
+  document.title='Qwikio Contact page'
+
   return (
     <div>
       <ContactHero />

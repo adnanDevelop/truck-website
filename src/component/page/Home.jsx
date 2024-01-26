@@ -6,6 +6,9 @@ import Join from "../element/HomeSection/Join";
 import JoinVideo from "../element/HomeSection/JoinVideo";
 
 const Home = () => {
+  document.title='Qwikio Home page'
+
+
   return (
     <div>
       <Hero />

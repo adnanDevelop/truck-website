@@ -7,6 +7,8 @@ import ComitmentSection from "../element/AboutSection/ComitmentSection";
 import JoinVideo from "../element/HomeSection/JoinVideo";
 
 const About = () => {
+  document.title='Qwikio About page'
+
   return (
     <div>
       <AboutHero />
