@@ -11,7 +11,7 @@
 
   /* CUSTOM PROPERTIES */
   .btn-primary {
-    @apply md:py-[12px] py-[8px]  md:px-[20px] px-[15px]  border border-red text-red font-semibold text-base transition duration-500 hover:bg-red hover:text-white ;
+    @apply md:py-[12px] py-[8px]  md:px-[20px] px-[15px]  border border-red text-red font-semibold text-base transition duration-500 hover:bg-red hover:text-white;
   }
 
   .btn-secondary {
@@ -55,7 +55,6 @@
   }
 }
 
-
 /* TOP BTN  */
 .top-icon {
   width: 3rem;
@@ -74,27 +73,30 @@
   color: white;
   background-color: red;
   border: 2px solid transparent;
-  box-shadow:  0 0.8rem 1.5rem rgba(255, 0, 0, 0.604);
+  box-shadow: 0 0.8rem 1.5rem rgba(255, 0, 0, 0.604);
   transition: all 0.4s linear;
 }
 
-.top-icon:hover , .top-icon:focus {
+.top-icon:hover,
+.top-icon:focus {
   opacity: 1;
   color: red;
   border-color: red;
   background-color: transparent;
-  box-shadow:  0 0.8rem 1.5rem rgba(0 , 0 , 0 , 0.5);
+  box-shadow: 0 0.8rem 1.5rem rgba(0, 0, 0, 0.5);
 }
 
 .animateIcon {
- visibility: visible;
-  animation : iconAnimation 0.5s linear;
+  visibility: visible;
+  animation: iconAnimation 0.5s linear;
 }
 
 @keyframes iconAnimation {
-  0%{transform: translateY(10rem);}
-  100%{
-      transform: translateY(0rem);
+  0% {
+    transform: translateY(10rem);
+  }
+  100% {
+    transform: translateY(0rem);
   }
 }
 
@@ -103,9 +105,92 @@
 }
 
 @keyframes icon {
-  0%{transform: translateY(-0.5rem);}
-  100%{transform: translateY(0rem);}
+  0% {
+    transform: translateY(-0.5rem);
+  }
+  100% {
+    transform: translateY(0rem);
+  }
+}
+
+/* JOIN SECTION */
+.video-container {
+  max-width: 1150px;
+  margin: auto;
+  padding: 20px;
+}
+.video-banner {
+  position: relative;
+}
+.video-banner .video-div video {
+  width: 100%;
+  object-fit: cover;
+  height: 350px;
+}
+
+.video-banner .video-text-content {
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  height: 350px;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(0deg, #ed1b268c 0%, #ed1b268c 100%);
+  text-align: center;
+  padding: 60px 40px 50px;
+}
+
+.video-text-content .title {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 64px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+.video-text-content .text {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: normal;
+  color: #f9fafb;
+  max-width: 684px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.video-text-content .btn-video-contact {
+  display: inline-block;
+  width: 160px;
+  height: 48px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #fff;
+  font-size: 18px;
+  color: #000;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+  transition: all 0.4s linear;
 }
 
 
-/* JOIN SECTION */
+@media screen and (max-width: 767px) {
+  .video-banner .video-div video {
+    height: 402px;
+    object-fit: cover;
+  }
+  .video-banner .video-text-content {
+    height: 402px;
+    align-items: center;
+    padding: 30px 15px;
+  }
+
+  .video-text-content .title {
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 18px;
+  }
+}
