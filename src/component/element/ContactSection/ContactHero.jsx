@@ -20,16 +20,20 @@ const ContactHero = () => {
               Connect with US
             </h3>
             <p className="text-[16px] text-gray font-normal mt-[20px] ">
-            Join our mission to drive a greener, more equitable world. 
+              Join our mission to drive a greener, more equitable world.
             </p>
             <div className="flex items-center gap-[20px] mb-[20px] mt-[20px] ">
               <img src="/image/contact/icon-1.svg" alt="" />
               {/* <a href="tel:+1-773-530-3799" target="_blank"  rel="noreferrer" >+1 773-530-3799</a> */}
-              <a href="tel:+1-773-530-3799"  rel="noreferrer" >+1 773-530-3799</a>
+              <a href="tel:+1-773-530-3799" rel="noreferrer">
+                +1 773-530-3799
+              </a>
             </div>
             <div className="flex items-center gap-[20px] mb-[20px] ">
               <img src="/image/contact/icon-2.svg" alt="" />
-              <a href="mailto:info@qwikio.com"  rel="noreferrer" target="_blank" >info@qwikio.com</a>
+              <a href="mailto:info@qwikio.com" rel="noreferrer" target="_blank">
+                info@qwikio.com
+              </a>
             </div>
             <div className="flex items-center gap-[20px] ">
               <img src="/image/contact/icon-3.svg" alt="" />
@@ -42,48 +46,58 @@ const ContactHero = () => {
 
           {/* FORM SECTION */}
           <div className="form_section sm:p-[50px] p-[20px]  bg-white shadow-xl  lg:col-span-7 ">
-            <div className="input_group mb-4">
-              <p className="mb-2 text-[#374151] ">Name</p>
-              <input
-                type="text"
-                required
-                className="w-full h-[50px] border border-[#D1D5DB] focus:border-red px-4  "
-              />
-            </div>
-            <div className="input_group mb-4">
-              <p className="mb-2 text-[#374151] ">Email</p>
-              <input
-                type="email"
-                required
-                className="w-full h-[50px] border border-[#D1D5DB] focus:border-red px-4  "
-              />
-            </div>
-            <div className="input_group mb-4">
-              <p className="mb-2 text-[#374151] ">Company Name</p>
-              <input
-                type="text"
-                required
-                className="w-full h-[50px] border border-[#D1D5DB] focus:border-red px-4  "
-              />
-            </div>
+            <form action="https://formspree.io/f/mayrqdgd" method="POST">
+              <div className="input_group mb-4">
+                <p className="mb-2 text-[#374151] ">Name</p>
+                <input
+                  type="text"
+                  required
+                  name="name"
+                  autoComplete="off"
+                  className="w-full h-[50px] border border-[#D1D5DB] focus:border-red px-4  "
+                />
+              </div>
+              <div className="input_group mb-4">
+                <p className="mb-2 text-[#374151] ">Email</p>
+                <input
+                  type="email"
+                  required
+                  name="email"
+                  autoComplete="off"
+                  className="w-full h-[50px] border border-[#D1D5DB] focus:border-red px-4  "
+                />
+              </div>
+              <div className="input_group mb-4">
+                <p className="mb-2 text-[#374151] ">Company Name</p>
+                <input
+                  type="text"
+                  required
+                  name="CompanyName"
+                  autoComplete="off"
+                  className="w-full h-[50px] border border-[#D1D5DB] focus:border-red px-4  "
+                />
+              </div>
 
-            <div className="input_group mb-4">
-              <p className="mb-2 text-[#374151] ">Message</p>
-              <textarea
-                name="textfield"
-                className="text_area px-4 pt-2 resize-none w-full h-[120px] border border-[#D1D5DB] "
-              >
-                {" "}
-              </textarea>
-            </div>
-            <div>
-              <button
-                type="submit"
-                className="block w-full py-[15px] capitalize font-semibold mt-5 bg-red text-white  "
-              >
-                contact us
-              </button>
-            </div>
+              <div className="input_group mb-4">
+                <p className="mb-2 text-[#374151] ">Message</p>
+                <textarea
+                  name="message"
+                  autoComplete="off"
+                  required
+                  className="text_area px-4 pt-2 resize-none w-full h-[120px] border border-[#D1D5DB] "
+                >
+                  {" "}
+                </textarea>
+              </div>
+              <div>
+                <button
+                  type="submit"
+                  className="block w-full py-[15px] capitalize font-semibold mt-5 bg-red text-white  "
+                >
+                  contact us
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
