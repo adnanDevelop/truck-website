@@ -19,7 +19,7 @@ const AboutHero = () => {
       {/* ABOUT MAP SECTION */}
       <div className="map_section my-[40px] lg:px-[140px] ">
         <img
-          src="/image/about/hero-image.png"
+          src="/image/about/about-map.png"
           className="mx-auto"
           alt=""
         />

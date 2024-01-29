@@ -17,7 +17,7 @@ const Hero = () => {
           accessible. Join our revolution in eco-friendly transportation!
         </p>
       </div>
-      <div className="hero_img  flex lg:justify-end justify-center items-center">
+      <div className="hero_img flex lg:justify-end justify-center items-center">
         {/* <img src="/image/hero-img.png" className="block ms-auto" alt="" /> */}
         <img src="/image/hero-img.png" className="" alt="" />
       </div>

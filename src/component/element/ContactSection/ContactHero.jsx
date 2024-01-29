@@ -7,7 +7,7 @@ const ContactHero = () => {
       <div
         className="w-full h-[360px] bg-cover"
         style={{
-          background: "url(/image/contact/hero-img.png) no-repeat center",
+          background: "url(/image/contact/about-bg.png) no-repeat center",
         }}
       ></div>
 

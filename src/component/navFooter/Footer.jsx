@@ -62,12 +62,60 @@ const Footer = () => {
 
       {/* SUBFOOTER SECTION */}
       <div className="flex items-center justify-between">
-        <p className="text-[14px] font-secondary fw-[400] "  >© Copyright 2023</p>
+        <p className="text-[14px] font-secondary fw-[400] ">© Copyright 2023</p>
         <div className="flex items-center gap-[18px] ">
-          <img src="/image/footer/img-1.svg" className="cursor-pointer"  alt="" />
-          <img src="/image/footer/img-2.svg" className="cursor-pointer"  alt="" />
-          <img src="/image/footer/img-3.svg" className="cursor-pointer"  alt="" />
-          <img src="/image/footer/img-4.svg" className="cursor-pointer"  alt="" />
+          <a
+            rel="noreferrer"
+            href="https://www.facebook.com/qwikio"
+            target="_blank"
+            className="no-underline"
+          >
+            {" "}
+            <img
+              src="/image/footer/img-1.svg"
+              className="cursor-pointer"
+              alt=""
+            />
+          </a>
+          <a
+            rel="noreferrer"
+            href="https://www.linkedin.com/company/viadrop/"
+            target="_blank"
+            className="no-underline"
+          >
+            {" "}
+            <img
+              src="/image/footer/img-2.svg"
+              className="cursor-pointer"
+              alt=""
+            />
+          </a>
+          <a
+            rel="noreferrer"
+            href="https://www.instagram.com/qwikioev"
+            target="_blank"
+            className="no-underline"
+          >
+            {" "}
+            <img
+              src="/image/footer/img-3.svg"
+              className="cursor-pointer"
+              alt=""
+            />
+          </a>
+          <a
+            rel="noreferrer"
+            href="https://twitter.com/qwikiomotors"
+            target="_blank"
+            className="no-underline"
+          >
+            {" "}
+            <img
+              src="/image/footer/img-4.svg"
+              className="cursor-pointer"
+              alt=""
+            />
+          </a>
         </div>
       </div>
     </div>
